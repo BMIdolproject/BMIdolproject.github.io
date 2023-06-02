@@ -1,18 +1,13 @@
 <!DOCYTE html>
 <html lang="ja">
 <head>
-<link rel="stylesheet" href="stylesheet.css">
 <div class="header-logo">
 <title>BMIdol project homepage</title>
 <meta charset="UTF-8">
 <meta name="view port" content="width=device-width, initial-scale=1">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
-<meta name="msapplication-TileColor" content="">
-<meta name="theme-color" content="">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#000000">
+<meta name="apple-mobile-web-app-status-bar-style" content="#000000">
 
 </head>
 <body>
@@ -20,15 +15,36 @@
    <header>
       <div class="container">
         <div class="header-left">
-          <image class="logo" src="./images/" width="300" height="100" alt="">
+          <img class="logo" src="./images/BMIdol_logo_00" style="width: 300px; height: 100px;" alt="BMIdol_logo_00">
         </div>
       </div>
     </header>
     
     <div class="top-wrapper">
+        <video autoplay loop muted>
+            <source src="images/BMIdol_demo_00.mov" type="video/mov">
+            Your browser does not support the video tag.
+        </video>
       <div class="container">
         <h1>BMIdol</h1>
       </div>
+      <style>
+            .top-wrapper {
+                width: 100%;
+                padding-top: 56.25%; /* 16:9 aspect ratio */
+                max-height: 600px; /* Maximum height */
+                min-height: 200px; /* Minimum height */
+                background-color: #f1f1f1;
+            }
+
+            @media screen and (max-width: 767px) {
+                /* Styles for mobile screens */
+                .top-wrapper {
+                    max-height: 400px;
+                    min-height: 150px;
+                }
+            }
+      </style>
     </div>
    
 <div class="navbar">
