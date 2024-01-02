@@ -1,0 +1,342 @@
+:root{
+    --Aqua-background:#00ffff;
+    --Ash-background:#333;
+    --Yellow-background:#ffff00;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+main{
+    margin-top: 6.25rem;
+}
+
+nav{
+    background-color: var(--Ash-background);
+}
+
+h1{
+    font-size: 2.6rem;
+    line-height: 2rem;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #000;
+    font-weight: 600;
+    max-width: 43.75rem;
+}
+
+.header-main{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    height: 6.25rem;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-main-logo {
+    height: 6.25rem;
+    width: 18.75rem;
+}
+
+.header-main-nav{
+    background-color: var(--Ash-background);
+    height: 3.125rem;
+    width: 100%;
+    margin-top: 0rem;
+    position: fixed;
+    color: var(--Aqua-background);
+    display: flex;
+    align-items: center;
+}
+
+.header-main-nav ul{
+    list-style: none;
+    margin-left: 50px;
+}
+
+.header-main-nav ul li{
+    display: inline;
+    float: left;
+    display: block;
+    height: 100%;
+}
+
+.header-main-nav ul li a{
+    padding: 0 0.625rem;
+    line-height: 3.125rem;
+}
+
+.header-main-nav ul li a:hover{
+    color: var(--Yellow-background);
+}
+.header-main-lang{
+    background-color: #333;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-main-lang:hover{
+    background-color: #fc4765;
+}
+
+.header-main-lang a{
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 0.625rem;
+}
+
+.header-main-lang a:hover{
+    color: var(--Aqua-background);
+}
+.header-main-lang-Japanese{
+    margin-right: 0.625rem;
+}
+
+/* Footer */
+footer {  
+    width: 100%;
+    height: 5%;
+    position: fixed;   
+    bottom: 0;                                                                      
+    text-align: center;
+    padding: 1.25rem;
+    background-color:#333;
+    color:#fff;
+}
+
+.burger-menu,
+.burger-menu-btn{
+    display: none;
+}
+
+
+/* Mobile Styles:Styles for screens up to 767px wide */
+@media only screen and (max-width: 767px) and (orientation: portrait)  {
+    body{
+        top: 20vh;
+    }
+
+    .burger-menu-btn{
+        display: block;
+        position: absolute;
+        right:0;
+        width: 6.25rem;
+        height: 6.25rem;
+        background-image: url(../images/icons/BMIdol-burger-menu_02.png),url(../images/icons/BMIdol-Close_02/3.png); 
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center, center left 12.5rem;
+    }
+
+    .burger-menu{
+        display: none;/*Do not appear until the btn clicked*/
+        position: fixed;
+        top: 0;
+        right: 0;
+        width:100%;
+        height: 100vh;
+        z-index: 900;
+        overflow-y: auto;
+        white-space:nowrap; /* Keep the menu items in a single line */
+        margin-top: 2.0rem;
+    }
+
+    .burger-menu ul{
+        width:100%;
+        height: cals(100vh-3.75rem);
+        right: 0;
+        padding-top: 4.0rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the menu items horizontally */
+        align-content: center;
+    }
+  
+    .burger-menu ul li{
+        flex-basis: 100%;
+        right: 0;
+        border-top: 0.264rem solid #000;
+    }
+
+    .burger-menu ul li a{
+        flex-basis: 100%;
+        display: block;
+        height: 100%;
+        left: 0;
+        font-size: 1.5rem;
+        padding:  1rem;
+        text-align: center;
+        color: var(--Aqua-background);
+    }
+
+    .burger-menu ul li a:hover{
+        color: var(--Yellow-background);
+    }
+
+    .header-main-logo {
+        width: 12.5rem;
+        height: 12.5rem;
+        margin-top: 1.0rem;
+    }
+
+    .header-main {
+        display: flex;
+        width: 100%;
+        height: 6.25rem;
+        align-items: flex-start;
+    }
+  
+    .header-main-nav {
+        display: none;
+    }
+  
+    .header-main-lang {
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .header-main-lang-Japanese {
+        margin-right: 0;
+        margin-left: 0.625rem;
+    }
+  
+    .header-main-lang a {
+        height: 100%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-left: 0.625rem;
+    }
+
+    .header-main-lang a :hover{
+        color: var(--Aqua-background);
+    }
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: landscape)  {
+    body{
+        top: 20vh;
+    }
+
+    main{
+        margin-top: 3.75rem;
+    }
+    
+    .burger-menu-btn{
+        display: block;
+        position: absolute;
+        right:0;
+        width: 3.75rem;
+        height: 3.75rem;
+        background-image: url(../images/icons/BMIdol-burger-menu_02.png),url(../images/icons/BMIdol-Close_02/3.png); 
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-position: center, center left 12.5rem;
+    }
+
+    .burger-menu{
+        display: none;/*Do not appear until the btn clicked*/
+        position: fixed;
+        top: 0;
+        right: 0;
+        width:100%;
+        height: 100vh;
+        z-index: 900;
+        overflow-y: auto;
+        white-space:nowrap; /* Keep the menu items in a single line */
+    }
+
+    .burger-menu ul{
+        width:100%;
+        height: cals(100vh-3.75rem);
+        right: 0;
+        padding-top: 3.75rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the menu items horizontally */
+        align-content: center;
+    }
+  
+    .burger-menu ul li{
+        flex-basis: 100%;
+        right: 0;
+        border-top: 0.264rem solid #000;
+    }
+
+    .burger-menu ul li a{
+        flex-basis: 100%;
+        display: block;
+        height: 100%;
+        left: 0;
+        font-size: 1.5rem;
+        padding:  1rem;
+        text-align: center;
+        color: var(--Aqua-background);
+    }
+
+    .burger-menu ul li a:hover{
+        color: var(--Yellow-background);
+    }
+
+    .header-main-logo {
+        width: 6.25rem;
+        height: 6.25rem;
+        margin-top: 0.75rem;
+    }
+
+    .header-main {
+        display: flex;
+        width: 100%;
+        height: 3.75rem;
+        align-items: flex-start;
+    }
+  
+    .header-main-nav {
+        display: none;
+    }
+  
+    .header-main-lang {
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .header-main-lang-Japanese {
+        margin-right: 0;
+        margin-left: 0.625rem;
+    }
+  
+    .header-main-lang a {
+        height: 100%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-left: 0.625rem;
+    }
+
+    .header-main-lang a :hover{
+        color: var(--Aqua-background);
+    }
+}
+
+
+
+/*<600, 601, 768, 992, 1200px*/
