@@ -13,7 +13,7 @@ main {
 
 main::before {
     content: "";
-    background-image: url("images/frontpicture_01.png");
+    background-image: url("../images/frontpicture_01.png");
     position: absolute;
     top: 6.25rem;
     left: 0;
@@ -32,7 +32,7 @@ main:hover::before {
 
 main::after {
     content: "";
-    background-image: url("images/frontpicture_02.png");
+    background-image: url("../images/frontpicture_02.png");
     position: absolute;
     top: 6.25rem;
     left: 0;
