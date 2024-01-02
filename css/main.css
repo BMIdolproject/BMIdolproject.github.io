@@ -136,7 +136,7 @@ footer {
         right:0;
         width: 6.25rem;
         height: 6.25rem;
-        background-image: url(images/icons/BMIdol-burger-menu_02.png),url(images/icons/BMIdol-Close_02/3.png); 
+        background-image: url(../images/icons/BMIdol-burger-menu_02.png),url(../images/icons/BMIdol-Close_02/3.png); 
         background-size: cover;
         background-repeat: no-repeat; 
         background-position: center, center left 12.5rem;
@@ -245,7 +245,7 @@ footer {
         right:0;
         width: 3.75rem;
         height: 3.75rem;
-        background-image: url(images/icons/BMIdol-burger-menu_02.png),url(images/icons/BMIdol-Close_02/3.png); 
+        background-image: url(../images/icons/BMIdol-burger-menu_02.png),url(../images/icons/BMIdol-Close_02/3.png); 
         background-size: cover;
         background-repeat: no-repeat; 
         background-position: center, center left 12.5rem;
