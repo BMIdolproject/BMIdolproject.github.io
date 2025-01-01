@@ -1,0 +1,159 @@
+main {
+    width: 100%;
+    height: calc(100vh - 6.25rem);
+    position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;/* Prevent content from overflowing */
+    opacity: 1.0;
+}
+
+main::before {
+    content: "";
+    background-image: url("../CHI_images/frontpicture_03.png");
+    position: absolute;
+    top: 6.25rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+}
+
+main:hover::before {
+    opacity: 0;
+}
+
+main::after {
+    content: "";
+    background-image: url("../CHI_images/frontpicture_04.png");
+    position: absolute;
+    top: 6.25rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+    z-index: -1;
+}
+  
+main:hover::after {
+    opacity: 1;
+}
+  
+main:hover .main-intro h1,
+main:hover .main-intro p {
+    opacity: 1;
+}
+
+main span{
+    color: #ee01fb;
+    text-transform: none;
+    -webkit-text-stroke-width: 0.0625rem;
+    -webkit-text-stroke-color: var(--Aqua-background);
+}
+
+.main-intro h1,
+.main-intro p {
+    opacity: 1;
+    transition: opacity 10s ease-in-out;
+}
+  
+.main-intro h1 {
+    margin-top: 6.0rem;
+    font-size: 3.125rem;
+    line-height: 3.125rem;
+    color: #000;
+    -webkit-text-stroke-width: 0.0625rem;
+    -webkit-text-stroke-color: #fff;
+}
+
+.main-intro p {
+    margin-top: 0.625rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: #777;
+    -webkit-text-stroke-width: 0.0625rem;
+    -webkit-text-stroke-color: var(--Yellow-background);
+}
+ 
+
+/* Mobile Styles:Styles for screens up to 767px wide */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    main {
+        height: 100%;
+    }
+    
+    main::before {
+        top:0;
+    }
+    
+    main::after {
+        top: 0;
+    }
+      
+    .main-intro h1 {
+        margin-top: 16rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        color: #000;
+    }
+    
+    .main-intro p {
+        margin-top: 0.625rem;
+        margin-bottom: 3.0rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        color: var(--Yellow-background);
+        -webkit-text-stroke-width: 0.062rem;
+        -webkit-text-stroke-color: #777;
+    }
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: landscape)  {
+    main {
+        height: calc(100vh - 3.75rem);
+    }
+    
+    main::before {
+        top: 3.75rem;
+    }
+    
+    main::after {
+        top:3.75rem;
+    }
+      
+    main span{
+        color: #ee01fb;
+        text-transform: none;
+        -webkit-text-stroke-width: 0.0625rem;
+        -webkit-text-stroke-color: var(--Aqua-background);
+    }
+    
+    .main-intro h1 {
+        margin-top: 9.0rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        color: #000;
+        -webkit-text-stroke-width: 0.0625rem;
+        -webkit-text-stroke-color: #fff;
+    }
+    
+    .main-intro p {
+        margin-top: 0.625rem;
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        color: #777;
+        -webkit-text-stroke-width: 0.031rem;
+        -webkit-text-stroke-color: var(--Yellow-background);
+    }
+}
