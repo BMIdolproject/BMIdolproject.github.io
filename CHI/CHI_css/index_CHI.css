@@ -13,7 +13,7 @@ main {
 
 main::before {
     content: "";
-    background-image: url("../CHI/CHI_images/frontpicture_03.png");
+    background-image: url("frontpicture_03.png");
     position: absolute;
     top: 6.25rem;
     left: 0;
@@ -32,7 +32,7 @@ main:hover::before {
 
 main::after {
     content: "";
-    background-image: url("../CHI/CHI_images/frontpicture_04.png");
+    background-image: url("frontpicture_04.png");
     position: absolute;
     top: 6.25rem;
     left: 0;
